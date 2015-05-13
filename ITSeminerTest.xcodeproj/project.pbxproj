@@ -8,14 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		8CD02DD421F7CA9B8B16B719 /* libPods-ITSeminerTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 793651429D0DEBEFDB58E23D /* libPods-ITSeminerTest.a */; };
-		B23B2B311A9CAACF00A95AC9 /* FacebookFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23B2B301A9CAACF00A95AC9 /* FacebookFriend.swift */; };
+		B211F7791A9F08B1008604F1 /* FRLike.swift in Sources */ = {isa = PBXBuildFile; fileRef = B211F7781A9F08B1008604F1 /* FRLike.swift */; };
+		B211F77B1A9F11B7008604F1 /* like@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B211F77A1A9F11B7008604F1 /* like@2x.png */; };
+		B211F77D1A9F11C0008604F1 /* didLike@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B211F77C1A9F11C0008604F1 /* didLike@2x.png */; };
+		B211F77F1A9F174B008604F1 /* likeGray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B211F77E1A9F174B008604F1 /* likeGray@2x.png */; };
+		B211F7811A9F1750008604F1 /* didLikeGray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B211F7801A9F1750008604F1 /* didLikeGray@2x.png */; };
+		B211F7831A9F175A008604F1 /* commentGray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B211F7821A9F175A008604F1 /* commentGray@2x.png */; };
+		B211F7861A9F22A0008604F1 /* LogoBlue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B211F7841A9F22A0008604F1 /* LogoBlue@2x.png */; };
+		B211F7871A9F22A0008604F1 /* LogoBlue@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B211F7851A9F22A0008604F1 /* LogoBlue@3x.png */; };
 		B23B2B331A9CB44300A95AC9 /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B23B2B321A9CB44300A95AC9 /* menu@2x.png */; };
 		B23B2B351A9CB45700A95AC9 /* invite@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B23B2B341A9CB45700A95AC9 /* invite@2x.png */; };
 		B23B2B371A9CB4CE00A95AC9 /* next@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B23B2B361A9CB4CE00A95AC9 /* next@2x.png */; };
 		B23B2B391A9CB4E200A95AC9 /* write@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B23B2B381A9CB4E200A95AC9 /* write@2x.png */; };
 		B23B2B3B1A9CB4F400A95AC9 /* pencil@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B23B2B3A1A9CB4F400A95AC9 /* pencil@2x.png */; };
 		B23B2B3D1A9CB4FC00A95AC9 /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B23B2B3C1A9CB4FC00A95AC9 /* back@2x.png */; };
-		B23B2B411A9CBDDE00A95AC9 /* FacebookUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23B2B401A9CBDDE00A95AC9 /* FacebookUser.swift */; };
+		B262D6611A9DBD3A00356BF3 /* FRReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B262D6601A9DBD3A00356BF3 /* FRReview.swift */; };
+		B262D6631A9DBD7900356BF3 /* FRComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B262D6621A9DBD7900356BF3 /* FRComment.swift */; };
+		B262D6651A9DC6CB00356BF3 /* send@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B262D6641A9DC6CB00356BF3 /* send@2x.png */; };
+		B262D6671A9DD42E00356BF3 /* FRUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B262D6661A9DD42E00356BF3 /* FRUser.swift */; };
+		B28519001B01E55F00F68878 /* profile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B28518FF1B01E55F00F68878 /* profile@2x.png */; };
+		B28519021B01E5AF00F68878 /* friends@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B28519011B01E5AF00F68878 /* friends@2x.png */; };
+		B28519041B01F44900F68878 /* close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B28519031B01F44900F68878 /* close@2x.png */; };
 		B298244F1A9C6CE700C05864 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B298244E1A9C6CE700C05864 /* AppDelegate.swift */; };
 		B29824541A9C6CE700C05864 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B29824521A9C6CE700C05864 /* Main.storyboard */; };
 		B29824561A9C6CE700C05864 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B29824551A9C6CE700C05864 /* Images.xcassets */; };
@@ -25,7 +38,6 @@
 		B29824791A9C716D00C05864 /* DroppyMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29824741A9C716D00C05864 /* DroppyMenuView.swift */; };
 		B298247A1A9C716D00C05864 /* DroppyMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29824751A9C716D00C05864 /* DroppyMenuViewController.swift */; };
 		B298247B1A9C716D00C05864 /* MaterialCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29824771A9C716D00C05864 /* MaterialCardView.swift */; };
-		B29F34F91A9C736E0040677B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29F34F81A9C736E0040677B /* Constants.swift */; };
 		B29F34FB1A9C7C9C0040677B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29F34FA1A9C7C9C0040677B /* LoginViewController.swift */; };
 		B29F34FD1A9C7CA70040677B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29F34FC1A9C7CA70040677B /* MenuViewController.swift */; };
 		B29F34FF1A9C7CB10040677B /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29F34FE1A9C7CB10040677B /* FriendsViewController.swift */; };
@@ -35,10 +47,24 @@
 		B29F35071A9C7D150040677B /* ReviewCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29F35061A9C7D150040677B /* ReviewCard.swift */; };
 		B29F350B1A9C7EB30040677B /* Logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B29F35091A9C7EB30040677B /* Logo@2x.png */; };
 		B29F350C1A9C7EB30040677B /* Logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B29F350A1A9C7EB30040677B /* Logo@3x.png */; };
-		B29F350E1A9C7F660040677B /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29F350D1A9C7F660040677B /* Style.swift */; };
 		B29F35121A9C8C7B0040677B /* EnteringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29F35111A9C8C7B0040677B /* EnteringViewController.swift */; };
-		B29F35141A9C8D690040677B /* WriteCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29F35131A9C8D690040677B /* WriteCommentViewController.swift */; };
+		B29F35141A9C8D690040677B /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29F35131A9C8D690040677B /* WriteViewController.swift */; };
 		B29F35191A9CA5EE0040677B /* FriendCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29F35181A9CA5EE0040677B /* FriendCard.swift */; };
+		B2A8AA2C1B01DC8C008D0B72 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A8AA2A1B01DC8C008D0B72 /* Constants.swift */; };
+		B2A8AA2D1B01DC8C008D0B72 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A8AA2B1B01DC8C008D0B72 /* Style.swift */; };
+		B2AA90411A9E0EFE0083672B /* comment@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B2AA90401A9E0EFE0083672B /* comment@2x.png */; };
+		B2BA313B1AA0B64C00D31BCA /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BA31391AA0B64C00D31BCA /* Crashlytics.framework */; };
+		B2BA313C1AA0B64C00D31BCA /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BA313A1AA0B64C00D31BCA /* Fabric.framework */; };
+		B2BA313E1AA0B7CE00D31BCA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BA313D1AA0B7CE00D31BCA /* CoreLocation.framework */; };
+		B2BA31401AA0B7D400D31BCA /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BA313F1AA0B7D400D31BCA /* AudioToolbox.framework */; };
+		B2BA31421AA0B7DA00D31BCA /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BA31411AA0B7DA00D31BCA /* CFNetwork.framework */; };
+		B2BA31441AA0B7E200D31BCA /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BA31431AA0B7E200D31BCA /* MobileCoreServices.framework */; };
+		B2BA31461AA0B7E800D31BCA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BA31451AA0B7E800D31BCA /* QuartzCore.framework */; };
+		B2BA31481AA0B7EE00D31BCA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BA31471AA0B7EE00D31BCA /* Security.framework */; };
+		B2BA314A1AA0B7F400D31BCA /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BA31491AA0B7F400D31BCA /* StoreKit.framework */; };
+		B2BA314C1AA0B7FC00D31BCA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BA314B1AA0B7FC00D31BCA /* SystemConfiguration.framework */; };
+		B2BA314E1AA0B80400D31BCA /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BA314D1AA0B80400D31BCA /* libz.dylib */; };
+		B2BA31501AA0B80B00D31BCA /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BA314F1AA0B80B00D31BCA /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,14 +81,27 @@
 		793651429D0DEBEFDB58E23D /* libPods-ITSeminerTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ITSeminerTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1153BE5B9DB38120BFBB13D /* Pods-ITSeminerTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ITSeminerTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ITSeminerTest/Pods-ITSeminerTest.debug.xcconfig"; sourceTree = "<group>"; };
 		AADBEE160DF37AFF363538E6 /* Pods-ITSeminerTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ITSeminerTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-ITSeminerTest/Pods-ITSeminerTest.release.xcconfig"; sourceTree = "<group>"; };
-		B23B2B301A9CAACF00A95AC9 /* FacebookFriend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookFriend.swift; sourceTree = "<group>"; };
+		B211F7781A9F08B1008604F1 /* FRLike.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRLike.swift; sourceTree = "<group>"; };
+		B211F77A1A9F11B7008604F1 /* like@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "like@2x.png"; sourceTree = "<group>"; };
+		B211F77C1A9F11C0008604F1 /* didLike@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "didLike@2x.png"; sourceTree = "<group>"; };
+		B211F77E1A9F174B008604F1 /* likeGray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "likeGray@2x.png"; sourceTree = "<group>"; };
+		B211F7801A9F1750008604F1 /* didLikeGray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "didLikeGray@2x.png"; sourceTree = "<group>"; };
+		B211F7821A9F175A008604F1 /* commentGray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "commentGray@2x.png"; sourceTree = "<group>"; };
+		B211F7841A9F22A0008604F1 /* LogoBlue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LogoBlue@2x.png"; sourceTree = "<group>"; };
+		B211F7851A9F22A0008604F1 /* LogoBlue@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LogoBlue@3x.png"; sourceTree = "<group>"; };
 		B23B2B321A9CB44300A95AC9 /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
 		B23B2B341A9CB45700A95AC9 /* invite@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "invite@2x.png"; sourceTree = "<group>"; };
 		B23B2B361A9CB4CE00A95AC9 /* next@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "next@2x.png"; sourceTree = "<group>"; };
 		B23B2B381A9CB4E200A95AC9 /* write@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "write@2x.png"; sourceTree = "<group>"; };
 		B23B2B3A1A9CB4F400A95AC9 /* pencil@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pencil@2x.png"; sourceTree = "<group>"; };
 		B23B2B3C1A9CB4FC00A95AC9 /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
-		B23B2B401A9CBDDE00A95AC9 /* FacebookUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookUser.swift; sourceTree = "<group>"; };
+		B262D6601A9DBD3A00356BF3 /* FRReview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRReview.swift; sourceTree = "<group>"; };
+		B262D6621A9DBD7900356BF3 /* FRComment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRComment.swift; sourceTree = "<group>"; };
+		B262D6641A9DC6CB00356BF3 /* send@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "send@2x.png"; sourceTree = "<group>"; };
+		B262D6661A9DD42E00356BF3 /* FRUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRUser.swift; sourceTree = "<group>"; };
+		B28518FF1B01E55F00F68878 /* profile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile@2x.png"; sourceTree = "<group>"; };
+		B28519011B01E5AF00F68878 /* friends@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "friends@2x.png"; sourceTree = "<group>"; };
+		B28519031B01F44900F68878 /* close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close@2x.png"; sourceTree = "<group>"; };
 		B29824491A9C6CE700C05864 /* ITSeminerTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ITSeminerTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B298244D1A9C6CE700C05864 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B298244E1A9C6CE700C05864 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -77,7 +116,6 @@
 		B29824751A9C716D00C05864 /* DroppyMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DroppyMenuViewController.swift; sourceTree = "<group>"; };
 		B29824771A9C716D00C05864 /* MaterialCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialCardView.swift; sourceTree = "<group>"; };
 		B29F34F31A9C71E80040677B /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
-		B29F34F81A9C736E0040677B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B29F34FA1A9C7C9C0040677B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B29F34FC1A9C7CA70040677B /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		B29F34FE1A9C7CB10040677B /* FriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
@@ -87,10 +125,24 @@
 		B29F35061A9C7D150040677B /* ReviewCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewCard.swift; sourceTree = "<group>"; };
 		B29F35091A9C7EB30040677B /* Logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo@2x.png"; sourceTree = "<group>"; };
 		B29F350A1A9C7EB30040677B /* Logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo@3x.png"; sourceTree = "<group>"; };
-		B29F350D1A9C7F660040677B /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		B29F35111A9C8C7B0040677B /* EnteringViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnteringViewController.swift; sourceTree = "<group>"; };
-		B29F35131A9C8D690040677B /* WriteCommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteCommentViewController.swift; sourceTree = "<group>"; };
+		B29F35131A9C8D690040677B /* WriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
 		B29F35181A9CA5EE0040677B /* FriendCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendCard.swift; sourceTree = "<group>"; };
+		B2A8AA2A1B01DC8C008D0B72 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B2A8AA2B1B01DC8C008D0B72 /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		B2AA90401A9E0EFE0083672B /* comment@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "comment@2x.png"; sourceTree = "<group>"; };
+		B2BA31391AA0B64C00D31BCA /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		B2BA313A1AA0B64C00D31BCA /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		B2BA313D1AA0B7CE00D31BCA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B2BA313F1AA0B7D400D31BCA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B2BA31411AA0B7DA00D31BCA /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B2BA31431AA0B7E200D31BCA /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		B2BA31451AA0B7E800D31BCA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B2BA31471AA0B7EE00D31BCA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B2BA31491AA0B7F400D31BCA /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		B2BA314B1AA0B7FC00D31BCA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B2BA314D1AA0B80400D31BCA /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		B2BA314F1AA0B80B00D31BCA /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +150,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2BA31501AA0B80B00D31BCA /* libsqlite3.dylib in Frameworks */,
+				B2BA314E1AA0B80400D31BCA /* libz.dylib in Frameworks */,
+				B2BA314C1AA0B7FC00D31BCA /* SystemConfiguration.framework in Frameworks */,
+				B2BA314A1AA0B7F400D31BCA /* StoreKit.framework in Frameworks */,
+				B2BA31481AA0B7EE00D31BCA /* Security.framework in Frameworks */,
+				B2BA31461AA0B7E800D31BCA /* QuartzCore.framework in Frameworks */,
+				B2BA31441AA0B7E200D31BCA /* MobileCoreServices.framework in Frameworks */,
+				B2BA31421AA0B7DA00D31BCA /* CFNetwork.framework in Frameworks */,
+				B2BA31401AA0B7D400D31BCA /* AudioToolbox.framework in Frameworks */,
+				B2BA313E1AA0B7CE00D31BCA /* CoreLocation.framework in Frameworks */,
+				B2BA313B1AA0B64C00D31BCA /* Crashlytics.framework in Frameworks */,
 				8CD02DD421F7CA9B8B16B719 /* libPods-ITSeminerTest.a in Frameworks */,
+				B2BA313C1AA0B64C00D31BCA /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,27 +188,32 @@
 		AE002425F9CA855D584993DB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B2BA314F1AA0B80B00D31BCA /* libsqlite3.dylib */,
+				B2BA314D1AA0B80400D31BCA /* libz.dylib */,
+				B2BA314B1AA0B7FC00D31BCA /* SystemConfiguration.framework */,
+				B2BA31491AA0B7F400D31BCA /* StoreKit.framework */,
+				B2BA31471AA0B7EE00D31BCA /* Security.framework */,
+				B2BA31451AA0B7E800D31BCA /* QuartzCore.framework */,
+				B2BA31431AA0B7E200D31BCA /* MobileCoreServices.framework */,
+				B2BA31411AA0B7DA00D31BCA /* CFNetwork.framework */,
+				B2BA313F1AA0B7D400D31BCA /* AudioToolbox.framework */,
+				B2BA313D1AA0B7CE00D31BCA /* CoreLocation.framework */,
+				B2BA31391AA0B64C00D31BCA /* Crashlytics.framework */,
+				B2BA313A1AA0B64C00D31BCA /* Fabric.framework */,
 				793651429D0DEBEFDB58E23D /* libPods-ITSeminerTest.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B23B2B3E1A9CBDB900A95AC9 /* Facebook */ = {
+		B262D65C1A9DBD1800356BF3 /* Parse */ = {
 			isa = PBXGroup;
 			children = (
-				B23B2B301A9CAACF00A95AC9 /* FacebookFriend.swift */,
-				B23B2B401A9CBDDE00A95AC9 /* FacebookUser.swift */,
+				B262D6661A9DD42E00356BF3 /* FRUser.swift */,
+				B262D6601A9DBD3A00356BF3 /* FRReview.swift */,
+				B262D6621A9DBD7900356BF3 /* FRComment.swift */,
+				B211F7781A9F08B1008604F1 /* FRLike.swift */,
 			);
-			name = Facebook;
-			sourceTree = "<group>";
-		};
-		B23B2B3F1A9CBDC400A95AC9 /* Global */ = {
-			isa = PBXGroup;
-			children = (
-				B29F34F81A9C736E0040677B /* Constants.swift */,
-				B29F350D1A9C7F660040677B /* Style.swift */,
-			);
-			name = Global;
+			name = Parse;
 			sourceTree = "<group>";
 		};
 		B29824401A9C6CE700C05864 = {
@@ -173,6 +242,7 @@
 				B29F35081A9C7EB30040677B /* Resources */,
 				B29824701A9C716D00C05864 /* Libraires */,
 				B29F34F41A9C73380040677B /* App */,
+				B2A8AA291B01DC8C008D0B72 /* Helpers */,
 				B298244C1A9C6CE700C05864 /* Supporting Files */,
 			);
 			path = ITSeminerTest;
@@ -256,8 +326,7 @@
 		B29F34F51A9C73380040677B /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				B23B2B3F1A9CBDC400A95AC9 /* Global */,
-				B23B2B3E1A9CBDB900A95AC9 /* Facebook */,
+				B262D65C1A9DBD1800356BF3 /* Parse */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -265,9 +334,9 @@
 		B29F34F61A9C73380040677B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B29F35041A9C7D090040677B /* CommentCard.swift */,
-				B29F35061A9C7D150040677B /* ReviewCard.swift */,
 				B29F35181A9CA5EE0040677B /* FriendCard.swift */,
+				B29F35061A9C7D150040677B /* ReviewCard.swift */,
+				B29F35041A9C7D090040677B /* CommentCard.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -281,7 +350,7 @@
 				B29F34FE1A9C7CB10040677B /* FriendsViewController.swift */,
 				B29F35001A9C7CBF0040677B /* ProfileViewController.swift */,
 				B29F35021A9C7CCA0040677B /* ReviewViewController.swift */,
-				B29F35131A9C8D690040677B /* WriteCommentViewController.swift */,
+				B29F35131A9C8D690040677B /* WriteViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -289,6 +358,18 @@
 		B29F35081A9C7EB30040677B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B28519031B01F44900F68878 /* close@2x.png */,
+				B28519011B01E5AF00F68878 /* friends@2x.png */,
+				B28518FF1B01E55F00F68878 /* profile@2x.png */,
+				B211F7841A9F22A0008604F1 /* LogoBlue@2x.png */,
+				B211F7851A9F22A0008604F1 /* LogoBlue@3x.png */,
+				B211F7821A9F175A008604F1 /* commentGray@2x.png */,
+				B211F77E1A9F174B008604F1 /* likeGray@2x.png */,
+				B211F7801A9F1750008604F1 /* didLikeGray@2x.png */,
+				B211F77C1A9F11C0008604F1 /* didLike@2x.png */,
+				B211F77A1A9F11B7008604F1 /* like@2x.png */,
+				B2AA90401A9E0EFE0083672B /* comment@2x.png */,
+				B262D6641A9DC6CB00356BF3 /* send@2x.png */,
 				B23B2B3C1A9CB4FC00A95AC9 /* back@2x.png */,
 				B23B2B3A1A9CB4F400A95AC9 /* pencil@2x.png */,
 				B23B2B381A9CB4E200A95AC9 /* write@2x.png */,
@@ -299,6 +380,16 @@
 				B29F350A1A9C7EB30040677B /* Logo@3x.png */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		B2A8AA291B01DC8C008D0B72 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B2A8AA2A1B01DC8C008D0B72 /* Constants.swift */,
+				B2A8AA2B1B01DC8C008D0B72 /* Style.swift */,
+			);
+			name = Helpers;
+			path = App/Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,6 +404,7 @@
 				B29824461A9C6CE700C05864 /* Frameworks */,
 				B29824471A9C6CE700C05864 /* Resources */,
 				ACB5518302F56592A0E747D0 /* Copy Pods Resources */,
+				B2BA31381AA0B55000D31BCA /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -384,17 +476,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B211F7831A9F175A008604F1 /* commentGray@2x.png in Resources */,
 				B23B2B3B1A9CB4F400A95AC9 /* pencil@2x.png in Resources */,
+				B28519001B01E55F00F68878 /* profile@2x.png in Resources */,
 				B23B2B391A9CB4E200A95AC9 /* write@2x.png in Resources */,
+				B262D6651A9DC6CB00356BF3 /* send@2x.png in Resources */,
+				B211F7861A9F22A0008604F1 /* LogoBlue@2x.png in Resources */,
 				B23B2B371A9CB4CE00A95AC9 /* next@2x.png in Resources */,
+				B211F7871A9F22A0008604F1 /* LogoBlue@3x.png in Resources */,
+				B211F77D1A9F11C0008604F1 /* didLike@2x.png in Resources */,
+				B28519041B01F44900F68878 /* close@2x.png in Resources */,
+				B211F77F1A9F174B008604F1 /* likeGray@2x.png in Resources */,
+				B28519021B01E5AF00F68878 /* friends@2x.png in Resources */,
 				B29824541A9C6CE700C05864 /* Main.storyboard in Resources */,
 				B23B2B351A9CB45700A95AC9 /* invite@2x.png in Resources */,
 				B29F350B1A9C7EB30040677B /* Logo@2x.png in Resources */,
 				B29824591A9C6CE700C05864 /* LaunchScreen.xib in Resources */,
+				B211F7811A9F1750008604F1 /* didLikeGray@2x.png in Resources */,
 				B23B2B3D1A9CB4FC00A95AC9 /* back@2x.png in Resources */,
 				B29824561A9C6CE700C05864 /* Images.xcassets in Resources */,
 				B29F350C1A9C7EB30040677B /* Logo@3x.png in Resources */,
 				B23B2B331A9CB44300A95AC9 /* menu@2x.png in Resources */,
+				B2AA90411A9E0EFE0083672B /* comment@2x.png in Resources */,
+				B211F77B1A9F11B7008604F1 /* like@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +542,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ITSeminerTest/Pods-ITSeminerTest-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B2BA31381AA0B55000D31BCA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 7454b764d101b18a63a0c22daaf796c249f3c225 4abf159cebef886d98a08b9957f8aa1d4a054c47cbddcc443a1428ee01ec5a01";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -445,23 +562,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B29F35141A9C8D690040677B /* WriteCommentViewController.swift in Sources */,
+				B2A8AA2C1B01DC8C008D0B72 /* Constants.swift in Sources */,
+				B29F35141A9C8D690040677B /* WriteViewController.swift in Sources */,
 				B29F35051A9C7D090040677B /* CommentCard.swift in Sources */,
 				B298247A1A9C716D00C05864 /* DroppyMenuViewController.swift in Sources */,
-				B23B2B311A9CAACF00A95AC9 /* FacebookFriend.swift in Sources */,
+				B262D6611A9DBD3A00356BF3 /* FRReview.swift in Sources */,
 				B29F35031A9C7CCA0040677B /* ReviewViewController.swift in Sources */,
 				B29824791A9C716D00C05864 /* DroppyMenuView.swift in Sources */,
 				B29824781A9C716D00C05864 /* CEMKit.swift in Sources */,
-				B29F350E1A9C7F660040677B /* Style.swift in Sources */,
+				B262D6671A9DD42E00356BF3 /* FRUser.swift in Sources */,
 				B29F34FD1A9C7CA70040677B /* MenuViewController.swift in Sources */,
 				B29F34FB1A9C7C9C0040677B /* LoginViewController.swift in Sources */,
-				B23B2B411A9CBDDE00A95AC9 /* FacebookUser.swift in Sources */,
 				B29F35121A9C8C7B0040677B /* EnteringViewController.swift in Sources */,
+				B262D6631A9DBD7900356BF3 /* FRComment.swift in Sources */,
 				B29F35011A9C7CBF0040677B /* ProfileViewController.swift in Sources */,
 				B29F35191A9CA5EE0040677B /* FriendCard.swift in Sources */,
 				B29F35071A9C7D150040677B /* ReviewCard.swift in Sources */,
 				B29F34FF1A9C7CB10040677B /* FriendsViewController.swift in Sources */,
-				B29F34F91A9C736E0040677B /* Constants.swift in Sources */,
+				B2A8AA2D1B01DC8C008D0B72 /* Style.swift in Sources */,
+				B211F7791A9F08B1008604F1 /* FRLike.swift in Sources */,
 				B298244F1A9C6CE700C05864 /* AppDelegate.swift in Sources */,
 				B298247B1A9C716D00C05864 /* MaterialCardView.swift in Sources */,
 			);
@@ -592,6 +711,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Cem Olcay (3U9WQAW4TY)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ITSeminerTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -607,6 +731,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Cem Olcay (3U9WQAW4TY)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ITSeminerTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

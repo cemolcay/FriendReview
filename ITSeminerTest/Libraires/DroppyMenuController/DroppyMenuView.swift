@@ -25,9 +25,9 @@ extension DroppyMenuViewAppeareance {
     
     init () {
         self.tintColor = UIColor.whiteColor()
-        self.font = UIFont (name: "HelveticaNeue-Light", size: 20)!
-        self.backgroundColor = UIColor (white: 0, alpha: 0.5)
-        self.gravityMagnitude = 10
+        self.font = UIFont.AvenirNextRegular(20)
+        self.backgroundColor = UIColor (white: 0, alpha: 0.7)
+        self.gravityMagnitude = 5
         self.springDamping = 0.9
         self.springVelocity = 0.9
         self.lineWidth = 1

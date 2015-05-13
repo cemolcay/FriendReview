@@ -9,70 +9,126 @@
 import UIKit
 
 class FriendsViewController: UIViewController {
-
-    var friends: [FacebookFriend] = []
+    
+    // MARK: Properties
+    
     var scroll: UIScrollView!
     
     
-    required init(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        getFriendsWithPhoto()
+    // MARK: Lifecycle
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupNavigationBar()
         
-        parentViewController?.navigationItem.rightBarButtonItem = barButtonItem("invite.png", {
-            [unowned self] (sender) -> () in
-            self.inviteFriendsPressed()
-        })
+        scroll = UIScrollView (frame: view.frame)
+        scroll.contentHeight = 10
+        view.addSubview(scroll)
+
+        getFriends {
+            [unowned self] friends in
+            self.drawFriends(friends)
+        }
     }
     
-    func inviteFriendsPressed () {
-        FBWebDialogs.presentRequestsDialogModallyWithSession(nil,
-            message: "Let me review you 🙊",
-            title: "Invite firends", parameters: nil) {
-                (dialogResult, url, error) -> Void in
-                if let e = error {
-                    println(e.description)
-                } else {
-                    println(url)
-                    println(dialogResult)
-                }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "friendProfileSegue"  {
+            let profile = segue.destinationViewController as! ProfileViewController
+            profile.user = sender as! FRUser
         }
     }
     
     
-    func getFriendsWithPhoto () {
+    // MARK: Requests
+    
+    func getFriends (success: ([FRUser]) -> Void) {
         SVProgressHUD.showWithStatus("Getting friends", maskType: .Black)
         
         FBRequestConnection.startWithGraphPath("me/friends?fields=first_name,last_name,id,picture",
-            completionHandler: { [unowned self] (connection, result, error) -> Void in
+            completionHandler: {[unowned self] (connection, result, error) -> Void in
             if let e = error {
                 SVProgressHUD.showErrorWithStatus("Could not getting friends")
                 println(e.description)
             } else {
+                
+                // get facebook friends ids
+                var ids: [String] = []
                 let friendsData = result["data"] as! [[String: AnyObject]]
                 for friendData in friendsData {
-                    var friend = FacebookFriend (data: friendData)
-                    self.friends.append(friend)
+                    ids.append(friendData["id"] as! String)
                 }
-                self.drawFriends()
+                
+                
+                // find friends pfusers by friends facebook ids
+                let query = PFUser.query()
+                query.whereKey("facebookId", containedIn: ids)
+                query.findObjectsInBackgroundWithBlock({
+                    [unowned self] (objects, error) -> Void in
+                    if let e = error {
+                        println("user get error")
+                    } else {
+                        var friends: [FRUser] = []
+                        for obj in objects {
+                            let friend = FRUser (user: obj as! PFUser)
+                            friends.append(friend)
+                        }
+                        success (friends)
+                    }
+                })
+                
             }
         })
     }
     
-    func drawFriends () {
-        scroll = UIScrollView (frame: view.frame)
-        scroll.contentHeight = navigationBarHeight + UIScreen.StatusBarHeight + 10
-        view.addSubview(scroll)
+    
+    // MARK: Draw
+    
+    func setupNavigationBar () {
+        navigationItem.title = "Friends"
+        navigationItem.rightBarButtonItem = barButtonItem("invite.png", {
+            [unowned self] (sender) -> () in
+            
+            FBWebDialogs.presentRequestsDialogModallyWithSession(FBSession.activeSession(),
+                message: "Let me review you 🙊",
+                title: "Invite firends",
+                parameters: nil) {
+                    (dialogResult, url, error) -> Void in
+                    if let e = error {
+                        println(e.description)
+                    } else {
+                        println(url)
+                        println(dialogResult)
+                    }
+            }
+        })
+    }
+    
+    func drawFriends (friends: [FRUser]) {
 
         for friend in friends {
-            let card = FriendCard (data: friend, action: {
-                [unowned self] (fbId) -> Void in
-                let profile = ProfileViewController (facebookId: fbId)
-                self.push(profile)
-            })
+            let card = FriendCard (
+                data: friend,
+                action: {
+                    [unowned self] in
+                    self.performSegueWithIdentifier("friendProfileSegue", sender: friend)
+                })
             
             card.y = scroll.contentHeight
             scroll.addSubview(card)
             scroll.contentHeight += card.h + 10
+        }
+        
+        if friends.count == 0 {
+            let label = UILabel (
+                x: 20,
+                y: UIScreen.StatusBarHeight + navigationBarHeight + 20,
+                width: scroll.w - 40,
+                attributedText: NSAttributedString(
+                    text: "You have no friends 😟",
+                    color: UIColor.TextColor(),
+                    font: UIFont.TextFont()),
+                textAlignment: .Center)
+            scroll.addSubview (label)
         }
         
         SVProgressHUD.dismiss()

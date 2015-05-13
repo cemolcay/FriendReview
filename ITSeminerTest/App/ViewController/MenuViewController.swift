@@ -17,11 +17,10 @@ class MenuViewController: DroppyMenuViewController {
             [unowned self] (sender) -> () in
             self.openMenu()
         }
-    }
-    
-    override func viewDidAppear(animated: Bool) {
+        
         let friends = getViewController("Friends") as! FriendsViewController
         let profile = getViewController("Profile") as! ProfileViewController
+        profile.user = FRUser.currentUser()
         
         viewControllers = [friends, profile]
     }

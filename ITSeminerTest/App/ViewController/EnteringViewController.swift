@@ -19,4 +19,15 @@ class EnteringViewController: UIViewController {
             performSegueWithIdentifier("goLogin", sender: self)
         }
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        super.prepareForSegue(segue, sender: sender)
+        
+        if segue.identifier == "startApp" {
+            let tab = segue.destinationViewController as! UITabBarController
+            let nav = tab.viewControllers![0] as! UINavigationController
+            let profile = nav.viewControllers.first! as! ProfileViewController
+            profile.user = FRUser.currentUser()
+        }
+    }
 }

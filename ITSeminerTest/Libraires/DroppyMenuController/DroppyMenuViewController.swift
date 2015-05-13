@@ -37,7 +37,7 @@ class DroppyMenuViewController: UIViewController, DroppyMenuViewDelegate, UIColl
     // MARK: Lifecycle
     
     init (viewControllers: [UIViewController]) {
-        super.init ()
+        super.init(nibName: nil, bundle: nil)
         assert(viewControllers.count > 0, "view controllers must be not empty")
         
         self.viewControllers = viewControllers

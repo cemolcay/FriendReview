@@ -10,24 +10,25 @@ import UIKit
 
 class FriendCard: MaterialCardView {
     
-    init (data: FacebookFriend, action: (fbId: String)->Void) {
+    init (data: FRUser, action: () -> Void) {
         super.init(x: 10, y: 0, w: UIScreen.ScreenWidth - 20)
         
         let cell = UIView (x: 0, y: 0, w: w, h: 0)
         
         let imageView = UIImageView (x: 10, y: 10, w: 30, h: 30)
         imageView.backgroundColor = UIColor.FBBorderColor()
-        imageView.imageWithUrl(data.imageUrl)
         imageView.setCornerRadius(imageView.w/2)
         cell.addSubview(imageView)
+
+        data.getImage { (image) -> Void in
+            imageView.image = image
+        }
         
         let nameLabel = UILabel (
             x: imageView.rightWithOffset(10),
             y: imageView.y,
-            text: data.firstName + " " + data.lastName,
-            textColor: UIColor.TitleColor(),
-            textAlignment: .Left,
-            font: UIFont.TitleFont())
+            attributedText: NSAttributedString(text: data.getName()!, color: UIColor.TitleColor(), font: UIFont.TitleFont()),
+            textAlignment: NSTextAlignment.Left)
         cell.addSubview(nameLabel)
         
         cell.h = max (imageView.bottomWithOffset(10), nameLabel.bottomWithOffset(10))
@@ -42,9 +43,7 @@ class FriendCard: MaterialCardView {
         next.right = cell.right - 10
         cell.addSubview(next)
         
-        addCellView(cell, action: { () -> Void in
-            action (fbId: data.id)
-        })
+        addCellView(cell, action: action)
         
         
         let infoLabel = UILabel (
@@ -52,15 +51,19 @@ class FriendCard: MaterialCardView {
             y: 0,
             width: cell.w - 20,
             padding: 5,
-            text: "Reviews: 0 Comments: 0",
+            text: "Reviews: 0",
             textColor: UIColor.TitleColor(),
             textAlignment: .Left,
             font: UIFont.TextFont())
+        infoLabel.alpha = 0
         
-        data.getUserReviewsCount { (reviewCount, commentCount) -> Void in
-            infoLabel.text = "Reviews: \(reviewCount) Comments: \(commentCount)"
+        data.getReviews { (reviews) -> Void in
+            infoLabel.text = "Reviews: \(reviews.count)"
+            infoLabel.animate({ () -> Void in
+                infoLabel.alpha = 1
+            })
         }
-        
+                
         addFooterView(infoLabel)
     }
     

@@ -17,5 +17,6 @@
 #import "SVPullToRefresh.h"
 #import "TPKeyboardAvoidingScrollView.h"
 #import "StrechyParallaxScrollView.h"
+#import "UIAlertView+Blocks.h"
 
 #endif

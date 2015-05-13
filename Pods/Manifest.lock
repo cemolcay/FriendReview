@@ -1,0 +1,36 @@
+PODS:
+  - Bolts (1.1.3)
+  - Facebook-iOS-SDK (3.23.0):
+    - Bolts (~> 1.0)
+  - Parse (1.6.3):
+    - Bolts (~> 1.1)
+  - ParseFacebookUtils (1.6.3):
+    - Facebook-iOS-SDK (~> 3.20)
+    - Parse (~> 1.6.3)
+  - StrechyParallaxScrollView (0.1)
+  - SVProgressHUD (1.1.2)
+  - SVPullToRefresh (0.4.1)
+  - TPKeyboardAvoiding (1.2.6)
+  - UIAlertView+Blocks (0.9)
+
+DEPENDENCIES:
+  - Facebook-iOS-SDK
+  - ParseFacebookUtils
+  - StrechyParallaxScrollView
+  - SVProgressHUD
+  - SVPullToRefresh
+  - TPKeyboardAvoiding
+  - UIAlertView+Blocks
+
+SPEC CHECKSUMS:
+  Bolts: e431c88fd02115d4a34016c2100bbfa4d2d5b146
+  Facebook-iOS-SDK: fcb0fd5bcdb50f1fe9ce27bf6b8cdf1aa5b2b0ed
+  Parse: 26354b8e2d22082f2aa95e7055c3254b91f27437
+  ParseFacebookUtils: 877130f8887ff55829344f2128247ff579a17616
+  StrechyParallaxScrollView: 81988959c814063eae05264e4cf4cd1dbbd32e2e
+  SVProgressHUD: 3afb875b9eb23acd1bed9b82495695c68621a8b2
+  SVPullToRefresh: ba2e718695a43253d8bea6852d2960097dc15d8c
+  TPKeyboardAvoiding: ee4dd35e3bb7bb64bfbda47e7cc9ba872ff10f77
+  UIAlertView+Blocks: a46c99c5144f6c5dbc7d62fd2a0678daceec89a3
+
+COCOAPODS: 0.36.0.rc.1
